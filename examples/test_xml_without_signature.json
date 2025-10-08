@@ -1,0 +1,41 @@
+{
+  "tipo": "01",
+  "serie": "F001",
+  "numero": "00000001",
+  "fecha_emision": "2024-01-15T10:30:00Z",
+  "tipo_moneda": "PEN",
+  "emisor": {
+    "ruc": "20123456789",
+    "razon_social": "EMPRESA DE PRUEBA SAC",
+    "nombre_comercial": "EMPRESA DE PRUEBA",
+    "direccion": "AV. AREQUIPA 123",
+    "distrito": "LIMA",
+    "provincia": "LIMA",
+    "departamento": "LIMA",
+    "pais": "PE"
+  },
+  "receptor": {
+    "tipo_documento": "1",
+    "numero_documento": "12345678",
+    "razon_social": "CLIENTE DE PRUEBA",
+    "direccion": "AV. TEST 456",
+    "distrito": "LIMA",
+    "provincia": "LIMA",
+    "departamento": "LIMA",
+    "pais": "PE"
+  },
+  "items": [
+    {
+      "codigo": "PROD001",
+      "descripcion": "PRODUCTO DE PRUEBA",
+      "cantidad": 1,
+      "precio_unitario": 100.00,
+      "impuestos": [
+        {
+          "tipo": "1000",
+          "porcentaje": 18.0
+        }
+      ]
+    }
+  ]
+} 

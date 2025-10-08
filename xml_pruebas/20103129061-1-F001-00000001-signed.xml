@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+	<ext:UBLExtensions>
+		<ext:UBLExtension>
+			<ext:ExtensionContent>
+				<ds:Signature Id="SignatureElement">
+				  <ds:SignedInfo>
+				    <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+				    <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+				    <ds:Reference URI="">
+				      <ds:Transforms>
+				        <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+				        <ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:Transform>
+				      </ds:Transforms>
+				      <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod>
+				      <ds:DigestValue>zjn6mJuIa6qbGOVdIftdWxTf8XgF/tarEMye/x/xqtI=</ds:DigestValue>
+				    </ds:Reference>
+				  </ds:SignedInfo>
+				  <ds:SignatureValue>Y5DixEa1Dv+ZlDqoK2fB7AkeQujHX7vblUKNCuXgEpF92nReyIVZVJiD3gIl7HjKPN19Y5Q7aJ3ZcpGUTFVBJwsnWZklx0NjqtYyN8UqO4MdJOQIcQ2R8VavKJRPA/hT9ZuZ3DrvxtXbJxLgVld5993KX3boG8/zbaLolb+2dwDWByrf0JcFv4GVfI9v1HtSqJQzvitti4svwNNFfJGoj2/wFevInKRo5yRH0C36P0H1UEsasrFxocJis+neqGFLMzNkbX8CgEecmuvu2vOm3dwR6Mii8uMEHZeL2ns7n++BU1lZFYQo84LgWolNRYIB82lgqZPys0IPza1aHwepEQ==</ds:SignatureValue>
+				  <ds:KeyInfo>
+				    <ds:X509Data>
+				      <ds:X509Certificate>MIIFnjCCBIagAwIBAgIIA6akYTIEsrwwDQYJKoZIhvcNAQELBQAwRjEkMCIGA1UEAwwbTGxhbWEucGUgU0hBMjU2IFN0YW5kYXJkIENBMREwDwYDVQQKDAhMTEFNQS5QRTELMAkGA1UEBhMCUEUwHhcNMjMwMjI0MjExNzExWhcNMjYwMjIzMjExNzAwWjCCATgxQjBABgNVBAkMOUNBTC4gUEFSUVVFIElORFVTVFJJQUwgTFQuIDQgTVouIEUgWi5JLiBQQVJRVUUgSU5EVVNUUklBTDEuMCwGCSqGSIb3DQEJARYfY2FybG9zLmFycmlvbGFAZ3J1cG9jaGlhcHBlLmNvbTEsMCoGA1UEAwwjU09GVFdBUkUgREUgRkFDVFVSQUNJT04gRUxFQ1RST05JQ0ExLDAqBgNVBAsMI0ZBQ1RVUkEgRUxFQ1RST05JQ0EgUlVDIDIwMTAzMTI5MDYxMSEwHwYDVQQLDBhWYWxpZGFkbyBwb3IgTGxhbWEucGUgRVIxITAfBgNVBAoMGENPTUVSQ0lBTCBMQVZBR05BIFMuQS5DLjETMBEGA1UEBwwKTEFNQkFZRVFVRTELMAkGA1UEBhMCUEUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCeNnUF1ubEHSYm3fVE7G1KhH01o0r+PJPWG/t0+XLAqmqtgnrOpkBpemu3711jCI///b1/q6lvpeTrcJVR6wBqI1PKGmxMuxI8/Wt2TZ213DqroqZnDcYyIWPOzJCEpau9XVw44Fb9CNqzHiz0yoLjy+pu2ZkTOj2+dlhWGkljOjx+c7/vCBpZL4uPLVrZhrThFIh8fHg8K6HaV0CA3BkkkVshqhCZ2h8m7/3K843EWmTmQc7OrNkmHkuTWyjeSaX3seq4zLlOknS2MX67fyfP9VACkKM51xJ64ztdoDSp4PcxYpnYudHMqRa7KGGsca2sL9FqMaisZzEfeiB3CjbjAgMBAAGjggGaMIIBljAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFF2IW63rZfv+aKLk2W89V3Ki7yuZMGcGCCsGAQUFBwEBBFswWTA1BggrBgEFBQcwAoYpaHR0cDovL2NydC5sbGFtYS5wZS9sbGFtYXBlc3RhbmRhcmRjYS5jZXIwIAYIKwYBBQUHMAGGFGh0dHA6Ly9vY3NwLmxsYW1hLnBlMCoGA1UdEQQjMCGBH2Nhcmxvcy5hcnJpb2xhQGdydXBvY2hpYXBwZS5jb20wRgYDVR0gBD8wPTA7Bg0rBgEEAYOXdwABAAMBMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8vbGxhbWEucGUvcmVwb3NpdG9yeS8wHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMDoGA1UdHwQzMDEwL6AtoCuGKWh0dHA6Ly9jcmwubGxhbWEucGUvbGxhbWFwZXN0YW5kYXJkY2EuY3JsMB0GA1UdDgQWBBTtcyJ6DapoAmqrWQeMwPMQFFnK7DAOBgNVHQ8BAf8EBAMCBsAwDQYJKoZIhvcNAQELBQADggEBAEL+9dAYFfWm3UAzlkK251Y6k7iODmw44inWI1QCEW5XMDCTrCBtrxdOegZHV3OiksxqQKxJHDMTZeS0VQx9EysXDbCT8W6+h8osyK+3NsQ/RE2bWKXOQCDsvBx1fZBvkzxijkivdh532LTAumUCVbKE+NKWPAs2YqhvooUHzgqrCSEUiG59td2obu6rMrDfbQkZg3BtEPazBsyl1RNKfmW3hevZbaAdqDYO0QhXALF5OxiNlebtK9HvnXneO7uFero76feKxEEoguoy08CuO6tcmYbvkFTFSNz+TOF2MvLRJ31d8NXWsqlowk5ILgRWwHIWyaGOrZ0ZPJWk4UMcyxo=</ds:X509Certificate>
+				    </ds:X509Data>
+				  </ds:KeyInfo>
+				</ds:Signature>
+			</ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>
+	<cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+	<cbc:CustomizationID>2.0</cbc:CustomizationID>
+	<cbc:ID>F001-00000001</cbc:ID>
+	<cbc:IssueDate>2024-07-01</cbc:IssueDate>
+	<cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+	<cbc:Note>Factura de ejemplo generada vía API</cbc:Note>
+	<cbc:DocumentCurrencyCode>PEN</cbc:DocumentCurrencyCode>
+	<cbc:LineCountNumeric>1</cbc:LineCountNumeric>
+	<cac:AccountingSupplierParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20103129061</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>COMERCIAL LAVAGNA S.A.C.</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyTaxScheme>
+				<cbc:RegistrationName>COMERCIAL LAVAGNA S.A.C.</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20103129061</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20103129061</cbc:ID>
+					<cbc:Name></cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>COMERCIAL LAVAGNA S.A.C.</cbc:RegistrationName>
+				<cac:RegistrationAddress>
+					<cbc:ID schemeID="Ubigeo" schemeName="Ubigeos" schemeAgencyName="PE:INEI">150101</cbc:ID>
+					<cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
+					<cbc:CityName>CHICLAYO</cbc:CityName>
+					<cbc:CountrySubentity>LAMBAYEQUE</cbc:CountrySubentity>
+					<cbc:District>CHICLAYO</cbc:District>
+					<cac:AddressLine>
+						<cbc:Line>MANUEL SUÁREZ 238, CHICLAYO</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode listID="ISO 3166-1" listAgencyName="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:RegistrationAddress>
+			</cac:PartyLegalEntity>
+			<cac:PostalAddress>
+				<cbc:StreetName>MANUEL SUÁREZ 238, CHICLAYO</cbc:StreetName>
+				<cbc:CitySubdivisionName>CHICLAYO</cbc:CitySubdivisionName>
+				<cbc:CityName>CHICLAYO</cbc:CityName>
+				<cbc:CountrySubentity>LAMBAYEQUE</cbc:CountrySubentity>
+				<cac:Country>
+					<cbc:IdentificationCode listID="ISO 3166-1" listAgencyName="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20100070970</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>SUPERMERCADOS PERUANOS S.A.</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyTaxScheme>
+				<cbc:RegistrationName>SUPERMERCADOS PERUANOS S.A.</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20100070970</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="6" schemeName="Documento de Identidad" schemeAgencyName="PE:SUNAT" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20100070970</cbc:ID>
+					<cbc:Name></cbc:Name>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>SUPERMERCADOS PERUANOS S.A.</cbc:RegistrationName>
+				<cac:RegistrationAddress>
+					<cbc:CityName>LIMA</cbc:CityName>
+					<cbc:CountrySubentity>LIMA</cbc:CountrySubentity>
+					<cbc:District>LIMA</cbc:District>
+					<cac:AddressLine>
+						<cbc:Line>AV. REPÚBLICA DE PANAMÁ, SAN ISIDRO, LIMA</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode listID="ISO 3166-1" listAgencyName="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:RegistrationAddress>
+			</cac:PartyLegalEntity>
+			<cac:PostalAddress>
+				<cbc:StreetName>AV. REPÚBLICA DE PANAMÁ, SAN ISIDRO, LIMA</cbc:StreetName>
+				<cac:Country>
+					<cbc:IdentificationCode listID="ISO 3166-1" listAgencyName="United Nations Economic Commission for Europe" listName="Country">PE</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="PEN">36</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="PEN">200</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="PEN">36</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>1000</cbc:ID>
+				<cbc:Percent>0.18</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">IGV</cbc:ID>
+					<cbc:Name>IGV</cbc:Name>
+					<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="PEN">200</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="PEN">200</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="PEN">236</cbc:TaxInclusiveAmount>
+		<cbc:ChargeTotalAmount currencyID="PEN">0</cbc:ChargeTotalAmount>
+		<cbc:PrepaidAmount currencyID="PEN">0</cbc:PrepaidAmount>
+		<cbc:PayableAmount currencyID="PEN">236</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>0</cbc:ID>
+		<cbc:InvoicedQuantity unitCode="NIU">2</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="PEN">200</cbc:LineExtensionAmount>
+		<cac:TaxTotal>
+			<cbc:TaxAmount currencyID="PEN">36</cbc:TaxAmount>
+			<cac:TaxSubtotal>
+				<cbc:TaxableAmount currencyID="PEN">200</cbc:TaxableAmount>
+				<cbc:TaxAmount currencyID="PEN">36</cbc:TaxAmount>
+				<cac:TaxCategory>
+					<cbc:ID>1000</cbc:ID>
+					<cbc:Percent>0.18</cbc:Percent>
+					<cac:TaxScheme>
+						<cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">IGV</cbc:ID>
+						<cbc:Name>IGV</cbc:Name>
+						<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+					</cac:TaxScheme>
+				</cac:TaxCategory>
+			</cac:TaxSubtotal>
+		</cac:TaxTotal>
+		<cac:Item>
+			<cbc:Description>Producto de prueba</cbc:Description>
+			<cac:SellersItemIdentification>
+				<cbc:ID>P001</cbc:ID>
+			</cac:SellersItemIdentification>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>18</cbc:Percent>
+				<cbc:TaxExemptionReasonCode>10</cbc:TaxExemptionReasonCode>
+				<cac:TaxScheme>
+					<cbc:ID schemeID="UN/ECE 5153" schemeName="Codigo de tributos" schemeAgencyName="PE:SUNAT">1000</cbc:ID>
+					<cbc:Name>IGV</cbc:Name>
+					<cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="PEN">118</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>

@@ -1,0 +1,147 @@
+server:
+  port: "8081"
+  host: "localhost"
+  read_timeout: 30
+  write_timeout: 30
+
+database:
+  driver: "postgres"
+  host: "localhost"
+  port: 5432
+  database: "facturacion_electronica"
+  user: "postgres"
+  password: "9876"
+  ssl_mode: "disable"
+  schema: "public"
+  max_open_conns: 25
+  max_idle_conns: 10
+
+sunat:
+  base_url: "https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService"
+  beta_url: "https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService"
+  fe_beta: "https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService"
+  fe_homologacion: "https://www.sunat.gob.pe/ol-ti-itcpgem-sqa/billService"
+  fe_produccion: "https://e-factura.sunat.gob.pe/ol-ti-itcpfegem/billService"
+  fe_consulta_cdr: "https://e-factura.sunat.gob.pe/ol-it-wsconscpegem/billConsultService"
+  guia_beta: "https://e-beta.sunat.gob.pe/ol-ti-itemision-guia-gem-beta/billService"
+  guia_produccion: "https://e-guiaremision.sunat.gob.pe/ol-ti-itemision-guia-gem/billService"
+  retencion_beta: "https://e-beta.sunat.gob.pe/ol-ti-itemision-otroscpe-gem-beta/billService"
+  retencion_produccion: "https://e-factura.sunat.gob.pe/ol-ti-itemision-otroscpe-gem/billService"
+  ruc: "20103129061"
+  username: "20103129061MODDATOS"
+  password: "MODDATOS"
+  # Configuración para envío real a SUNAT BETA
+  # Descomenta y usa estas credenciales cuando tengas acceso real a SUNAT BETA
+  # username: "TU_RUC_REAL"
+  # password: "TU_PASSWORD_REAL"
+  # Forzar envío real a SUNAT BETA (true = envía real, false = simula)
+  force_real_send: true
+  timeout: 60
+  max_retries: 3
+
+security:
+  certificate_path: "./certs/cert.pem"
+  private_key_path: "./certs/key.pem"
+  certificate_pass: "" # Si tu clave privada está cifrada, pon la contraseña aquí
+  hash_algorithm: "SHA256"
+  
+  # Certificados alternativos en formato P12 (si los tienes)
+  # certificate_p12_path: "./certs/C23022479065.pfx"
+  # certificate_p12_pass: "Ch14pp32023"
+
+# Configuración para desarrollo
+development:
+  server:
+    port: "8080"
+    host: "localhost"
+  
+  database:
+    driver: "postgres"
+    host: "localhost"
+    port: 5432
+    database: "facturacion_dev"
+    user: "postgres"
+    password: "9876"
+    ssl_mode: "disable"
+    schema: "public"
+  
+  security:
+    certificate_path: "./certs/cert.pem"
+    private_key_path: "./certs/key.pem"
+    certificate_pass: ""
+    # certificate_p12_path: "./certs/C23022479065.pfx"
+    # certificate_p12_pass: "Ch14pp32023"
+    hash_algorithm: "SHA256"
+  
+  sunat:
+    base_url: "https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService"
+    ruc: "20103129061"
+    username: "TESTUSER"
+    password: "TESTPASS"
+
+# Configuración para testing
+testing:
+  server:
+    port: "8081"
+    host: "localhost"
+  
+  database:
+    driver: "postgres"
+    host: "localhost"
+    port: 5432
+    database: "facturacion_test"
+    user: "postgres"
+    password: "9876"
+    ssl_mode: "disable"
+    schema: "test"
+  
+  security:
+    certificate_path: "./certs/test_cert.pem"
+    private_key_path: "./certs/test_key.pem"
+    certificate_pass: ""
+    # certificate_p12_path: "./certs/C23022479065.pfx"
+    # certificate_p12_pass: "Ch14pp32023"
+    hash_algorithm: "SHA256"
+  
+  sunat:
+    base_url: "https://mock-sunat.example.com/billService"
+    ruc: "20103129061"
+    username: "MOCKUSER"
+    password: "MOCKPASS"
+
+# Configuración para producción
+production:
+  server:
+    port: "80"
+    host: "0.0.0.0"
+    read_timeout: 60
+    write_timeout: 60
+  
+  database:
+    driver: "postgres"
+    host: "localhost"
+    port: 5432
+    database: "facturacion_prod"
+    user: "facturacion_user"
+    password: "9876"  # En producción cambiar por variable de entorno
+    ssl_mode: "require"
+    schema: "public"
+    max_open_conns: 50
+    max_idle_conns: 20
+  
+  security:
+    certificate_path: "/app/certs/prod_cert.pem"
+    private_key_path: "/app/certs/prod_key.pem"
+    # Paths de certificados deben configurarse via variables de entorno
+    # CERT_PATH, KEY_PATH, CERT_PASSWORD (si aplica)
+    # certificate_p12_path: "/app/certs/C23022479065.pfx"
+    # certificate_p12_pass: "Ch14pp32023"
+    hash_algorithm: "SHA256"
+  
+  sunat:
+    base_url: "https://e-factura.sunat.gob.pe/ol-ti-itcpfegem/billService"
+    ruc: "20103129061"
+    # username y password deben configurarse via variables de entorno
+    # SUNAT_USERNAME, SUNAT_PASSWORD
+    timeout: 120
+    max_retries: 5

@@ -1,0 +1,67 @@
+{
+  "tipo": 1,
+  "serie": "F001",
+  "numero": "00000001",
+  "fecha_emision": "2024-06-20T10:30:00Z",
+  "tipo_moneda": "PEN",
+  "emisor": {
+    "ruc": "20100070970",
+    "razon_social": "SUPERMERCADOS PERUANOS S.A.",
+    "tipo_documento": "6",
+    "direccion": "CALLE MORELLI 181, PISO 2",
+    "distrito": "SAN BORJA",
+    "provincia": "LIMA",
+    "departamento": "LIMA",
+    "codigo_pais": "PE",
+    "codigo_postal": "140101",
+    "email": "facturacion@supermercados.com"
+  },
+  "receptor": {
+    "tipo_documento": "6",
+    "numero_documento": "20103129061",
+    "razon_social": "COMERCIAL LAVAGNA S.A.C.",
+    "direccion": "AV. PRINCIPAL 123",
+    "distrito": "LIMA",
+    "provincia": "LIMA",
+    "departamento": "LIMA",
+    "codigo_pais": "PE",
+    "codigo_postal": "150101",
+    "email": "contacto@lavagna.com"
+  },
+  "items": [
+    {
+      "id": 1,
+      "numero_item": 1,
+      "codigo": "P001",
+      "descripcion": "Producto de prueba",
+      "unidad_medida": "NIU",
+      "cantidad": 2,
+      "valor_unitario": 100,
+      "precio_unitario": 118,
+      "tipo_afectacion": 10,
+      "valor_venta": 200,
+      "valor_total": 236,
+      "impuesto_item": [
+        {
+          "tipo_impuesto": "1000",
+          "codigo_impuesto": "IGV",
+          "base_imponible": 200,
+          "tasa": 18,
+          "monto_impuesto": 36
+        }
+      ]
+    }
+  ],
+  "totales": {
+    "importe_total": 236,
+    "total_valor_venta": 200,
+    "total_impuestos": 36,
+    "total_precio_venta": 236,
+    "total_venta_gravada": 200,
+    "total_venta_exonerada": 0,
+    "total_venta_inafecta": 0,
+    "total_venta_gratuita": 0,
+    "total_descuentos": 0,
+    "total_anticipos": 0
+  }
+} 
